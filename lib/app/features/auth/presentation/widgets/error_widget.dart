@@ -86,7 +86,7 @@ class ErrorScreen extends StatelessWidget {
     return Icon(
       Icons.error_outline_rounded,
       size: size,
-      color: AppColor.error.withOpacity(0.7),
+      color: AppColor.error.withValues(alpha: 0.7),
     );
   }
 }

@@ -26,7 +26,7 @@ class JwtDecoder {
       
       if (!payload.containsKey('exp')) {
         if (kDebugMode) {
-          print('El token no contiene el claim "exp".');
+          debugPrint('El token no contiene el claim "exp".');
         }
         return false;
       }
@@ -41,7 +41,7 @@ class JwtDecoder {
       
     } on FormatException catch (e) {
       if (kDebugMode) {
-        print('Error de formato al decodificar o verificar expiración: $e');
+        debugPrint('Error de formato al decodificar o verificar expiración: $e');
       }
       return true; 
     }

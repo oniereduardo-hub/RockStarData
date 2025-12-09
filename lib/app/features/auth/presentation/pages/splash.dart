@@ -33,7 +33,6 @@ class SplashPage extends StatelessWidget {
               CircularProgressIndicator(
                 color: Colors.white,
                 strokeWidth: 2,
-                year2023: true,
               ),
               SizedBox(height: 24),
               Text('Cargando...',

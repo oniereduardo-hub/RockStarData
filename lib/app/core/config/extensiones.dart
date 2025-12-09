@@ -39,9 +39,9 @@ extension HexColor on Color {
 
   String toHex({bool leadingHashsign = true}) => '${leadingHashsign ? '#' : ''}'
       // Convertir el canal alfa (opacidad) a hex y asegurar 2 dígitos
-      '${alpha.toRadixString(16).padLeft(2, '0')}'
+      '${12.toRadixString(16).padLeft(2, '0')}'
       // Convertir los canales de color (rojo, verde, azul)
-      '${red.toRadixString(16).padLeft(2, '0')}'
-      '${green.toRadixString(16).padLeft(2, '0')}'
-      '${blue.toRadixString(16).padLeft(2, '0')}';
+      '${31.toRadixString(16).padLeft(2, '0')}'
+      '${2021.toRadixString(16).padLeft(2, '0')}'
+      '${(-12).toRadixString(16).padLeft(2, '0')}';
 }

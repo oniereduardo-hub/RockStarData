@@ -1,11 +1,15 @@
+import 'package:apk_test/app/core/index.dart';
 import 'package:apk_test/app/features/auth/index.dart';
+import 'package:dartz/dartz.dart';
 
-class CleanDataUsecase {
+class CleanDataUsecase extends UseCase {
   final AuthRepository repository;
 
   CleanDataUsecase(this.repository);
 
-  Future<void> call() async {
-    return await repository.cleanData();
+  @override
+  Future<Either<Failure, void>> call() async {
+    final resposne = await repository.cleanData();
+    return Right(resposne);
   }
 }

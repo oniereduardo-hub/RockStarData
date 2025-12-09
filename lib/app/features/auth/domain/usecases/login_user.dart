@@ -2,7 +2,7 @@ import 'package:apk_test/app/core/index.dart';
 import 'package:apk_test/app/features/auth/index.dart';
 import 'package:dartz/dartz.dart';
 
-class LoginUserUsecase {
+class LoginUserUsecase{
   final AuthRepository repository;
   
   LoginUserUsecase(this.repository);

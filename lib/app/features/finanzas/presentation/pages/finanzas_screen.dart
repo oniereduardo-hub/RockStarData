@@ -19,7 +19,7 @@ class FinanzasScreen extends StatelessWidget {
                   height: 5.0.hp(context),
                   width: 10.0.wp(context),
                   decoration: BoxDecoration(
-                      color: Colors.green.withOpacity(0.3),
+                      color: Colors.green.withValues(alpha: 0.3),
                       borderRadius: BorderRadius.circular(24)),
                   child: Center(
                     child: Text(

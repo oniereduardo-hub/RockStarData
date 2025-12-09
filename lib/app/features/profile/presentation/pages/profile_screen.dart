@@ -45,7 +45,7 @@ class ProfileScreen extends StatelessWidget {
             Container(
               padding: EdgeInsets.symmetric(vertical: 5, horizontal: 6),
               decoration: BoxDecoration(
-                  color: Colors.black.withOpacity(0.3),
+                  color: Colors.black.withValues(alpha: 0.3),
                   borderRadius: BorderRadius.circular(18)),
               child: Icon(Icons.person,
                   size: 24, color: Colors.black, fontWeight: FontWeight.bold),
@@ -143,7 +143,7 @@ class ProfileScreen extends StatelessWidget {
                     text: item['text'] as String,
                     iconColor: Colors.purple.shade300,
                   );
-                }).toList(),
+                }),
 
                 const SizedBox(height: 30),
 
@@ -165,7 +165,7 @@ class ProfileScreen extends StatelessWidget {
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(12),
                                 ),
-                                shadowColor: Colors.grey.withOpacity(0.1),
+                                shadowColor: Colors.grey.withValues(alpha: 0.1),
                                 elevation: 1,
                               ),
                               child: state is AuthLoading

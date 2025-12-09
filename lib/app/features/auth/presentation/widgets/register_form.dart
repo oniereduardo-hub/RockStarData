@@ -344,7 +344,8 @@ class RegisterForm extends StatelessWidget {
                     width: double.infinity,
                     padding: const EdgeInsets.all(16.0),
                     decoration: BoxDecoration(
-                      color: AppColor.primary.withOpacity(0.05), // Fondo suave
+                      color: AppColor.primary
+                          .withValues(alpha: 0.05), // Fondo suave
                       borderRadius: BorderRadius.circular(12),
                       // Usar un CustomPainter para el borde punteado si es necesario.
                       // Por simplicidad, aquí usaremos un borde sólido con un color suave:

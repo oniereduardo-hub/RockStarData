@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:apk_test/app/core/index.dart';
 import 'package:apk_test/app/features/auth/index.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
@@ -39,7 +40,7 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
           tokenExpiry:
               DateTime.fromMillisecondsSinceEpoch(accessToken['exp'] * 1000),
         );
-        print('----------------------------->>>>>>>>>>>>> $user');
+        debugPrint('----------------------------->>>>>>>>>>>>> $user');
         return user;
       } else if (response.statusCode == 401) {
           throw ServerException(message: 'Crdenciales invalidas');

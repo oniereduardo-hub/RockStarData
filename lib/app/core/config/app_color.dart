@@ -49,7 +49,7 @@ class AppColor {
   // Additional Colors
   static Color mainColor = primary;
   static Color secundaryColor = backgroundLight;
-  static Color backgraund = grey.withOpacity(0.2);
+  static Color backgraund = grey.withValues(alpha: 0.2);
   static Color green = success;
   static Color ligthGreen = const Color(0xFF7DCEA0);
   static Color red = error;

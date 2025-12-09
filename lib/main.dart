@@ -32,7 +32,7 @@ void main() async {
       ),
     );
   } catch (e) {
-    print('Error durante la inicialización: $e');
+    debugPrint('Error durante la inicialización: $e');
     // Fallback app en caso de error
     runApp(
       MaterialApp(
